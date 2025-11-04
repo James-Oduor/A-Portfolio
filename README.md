@@ -52,4 +52,3 @@ This site is my creative outlet where I combine **technology**, **aesthetics**, 
 
 ---
 
-## 🧩 Folder Structure
