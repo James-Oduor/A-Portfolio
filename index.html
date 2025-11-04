@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James| Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <style>
+    /* Fade-out for messages */
+    #formStatus {
+      text-align: center;
+      margin-top: 1rem;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 1s ease; /* Smooth fade effect */
+    }
+  </style>
+
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "AmMj3HLJm3qK4FYqG", // replace with your EmailJS User ID if different
+      });
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <h1>James</h1>
+    </div>
+    <div class="header-right">
+      <div class="info-line">
+        <p class="sif">Student | Frontend Developer | Innovator</p>
+        <button class="dark-toggle">🌙 Dark Mode</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img class="JO" src="thumbnails/James.png" alt="Jamesg-Lebron Profile">
+      <p>
+        <strong class="hh">Hi, I’m James,</strong> a 15-year-old with a passion for creativity, sports, <br/> 
+        and problem-solving. I enjoy expressing myself through music, playing <br/> the flute, and staying active 
+        on the basketball court. I'm also dedicated <br/> to personal growth through learning and exploring 
+        the world of coding.<br/>
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2>My Craft</h2>
+    <p>My craft revolves around learning and improving in different areas, including music, basketball, and STEM. 
+      As a student, my occupation is to gain knowledge and sharpen my skills, whether in the classroom or on the court. 
+      My activities involve solving math problems, practicing my musical talents, and staying active in sports. 
+      This is not just a routine for me; it’s my passion and calling, something that shapes my future and defines my role in the world.
+    </p>
+    <div class="skills">
+      <div class="project-card-2">
+        <i class="fas fa-code"></i>
+        <h3>Web Design</h3>
+        <p>I’m passionate about coding, learning new technologies, and building projects that combine creativity and problem-solving to make a positive impact.</p>
+      </div>
+      <div class="project-card-2">
+        <i class="fa-solid fa-basketball"></i>
+        <h3>Basketball</h3>
+        <p>Basketball builds my teamwork, discipline, and focus while motivating me to keep improving and growing as a player.</p>
+      </div>
+      <div class="project-card-2">
+        <i class="fa-solid fa-music"></i>
+        <h3>Music</h3>
+        <p>Music is my creative outlet. I play the flute and continually work to improve my skills and understanding of music.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section>
+    <h2>My Role</h2>
+    <p>My work is more than just a task or duty; it is my passion and calling. Whether it's studying mathematics, practicing music, or improving my basketball skills, my efforts shape my future. Every assignment I complete, every challenge I tackle, and every skill I refine contribute to my growth. The projects below showcase my enthusiasm and dedication.</p>
+    <div class="skills">
+      <div class="project-card">
+        <h3>Music Player App</h3>
+        <img src="thumbnails/music.png" alt="Music Player App">
+        <p>A music player app that allows users to easily browse, organize, and play audio files.
+          <a href="https://music-player-project-app.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>Hoops For Kids Website</h3>
+        <img src="thumbnails/hoops for kids.png" alt="Hoops For Kids">
+        <p>A dynamic and responsive website that highlights the HFK team, their journey, and achievements.
+          <a href="https://hoopsfor.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>Calorie Counter</h3>
+        <img src="thumbnails/Calorie Counter.png" alt="Calorie Counter">
+        <p>A calorie counter tool designed to help users track and manage their daily calorie intake for better health and fitness.
+          <a href="https://calorie-counter-app-project.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+      <textarea name="message" placeholder="Your Message" aria-label="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 James . All rights reserved.</p>
+  </footer>
+
+
+  <!-- SCRIPTS -->
+  <script>
+    // 🌙 Dark mode toggle
+    const toggleBtn = document.querySelector('.dark-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+
+    // 📩 Contact form with EmailJS & fade-out
+    emailjs.init("AmMj3HLJm3qK4FYqG"); // Replace with your User ID
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.style.color = 'black';
+      status.style.opacity = '1';
+      status.textContent = "📤 Sending...";
+
+      try {
+        const response = await emailjs.sendForm('service_a6ey5lm', 'template_d7svt9e', form);
+        console.log("EmailJS Response:", response);
+
+        status.style.color = 'green';
+        status.textContent = "✅ Your message has been sent successfully!";
+        form.reset();
+
+        // Fade out message after 3 seconds
+        setTimeout(() => { status.style.opacity = '0'; }, 3000);
+
+      } catch (err) {
+        console.error("EmailJS Error Details:", err);
+
+        status.style.color = 'red';
+        status.textContent = err.text ? `❌ Error: ${err.text}` : "❌ Something went wrong. Check console for details.";
+
+        // Fade out message after 3 seconds
+        setTimeout(() => { status.style.opacity = '0'; }, 3000);
+      }
+    });
+
+    // ⬆️ Back to Top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // 🧭 Navbar hide/show on scroll
+    let lastScroll = 0;
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        header.classList.add('hide');
+      } else {
+        header.classList.remove('hide');
+      }
+      if (currentScroll > 80) {
+        header.classList.add('shrink');
+      } else {
+        header.classList.remove('shrink');
+      }
+      lastScroll = currentScroll;
+    });
+  </script>
+
+</body>
+</html>
