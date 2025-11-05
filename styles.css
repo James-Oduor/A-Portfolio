@@ -493,3 +493,15 @@ button:hover {
   margin-top: 10px;
   font-weight: bold;
 }
+.reserved {
+  background-color: #4e54c8;
+  color: white;
+  border: none;
+  margin-left: 400px;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
