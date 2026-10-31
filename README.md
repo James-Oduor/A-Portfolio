@@ -17,7 +17,7 @@
 ## 🪄 Overview
 
 Welcome to my **Personal Portfolio Website**, a reflection of who I am —  
-a **15-year-old student** from **Nairobi, Kenya**, passionate about **web design, basketball, and music** 🎵🏀💻.  
+a **16-year-old student** from **Nairobi, Kenya**, passionate about **web design, basketball, and music** 🎵🏀💻.  
 
 This site is my creative outlet where I combine **technology**, **aesthetics**, and **purpose** to share my journey.
 
@@ -25,7 +25,7 @@ This site is my creative outlet where I combine **technology**, **aesthetics**, 
 
 ## 🚀 Live Preview
 
-🌍 **Visit Here:** [https://your-portfolio-link.netlify.app/](https://your-portfolio-link.netlify.app/)  
+🌍 **Visit Here:** portfolio-done.netlify.app 
 *(Replace this with your actual Netlify or Vercel link)*
 
 ---
