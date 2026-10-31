@@ -25,8 +25,8 @@ This site is my creative outlet where I combine **technology**, **aesthetics**, 
 
 ## 🚀 Live Preview
 
-🌍 **Visit Here:** portfolio-done.netlify.app 
-*(Replace this with your actual Netlify or Vercel link)*
+🌍 **Visit Here:** 
+*portfolio-done.netlify.app*
 
 ---
 
